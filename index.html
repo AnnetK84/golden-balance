@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курс "Исцеление временных линий" — с практиком Сэла Рэйчела</title>
+  <style>
+    :root {
+      --primary-color: #6a4c93;
+      --secondary-color: #8a5a44;
+      --accent-color: #f8b400;
+      --light-color: #f7f7f7;
+      --dark-color: #333;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      line-height: 1.6;
+      color: var(--dark-color);
+      background-color: var(--light-color);
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+    
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin: 2rem 0 1.5rem;
+      text-align: center;
+    }
+    
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    li {
+      margin-bottom: 0.5rem;
+    }
+    
+    a {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: var(--dark-color);
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    a:hover {
+      background-color: #e0a800;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    strong {
+      color: var(--primary-color);
+    }
+    
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    
+    button {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #5a3d7a;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: var(--dark-color);
+      color: white;
+      margin-top: 2rem;
+    }
+    
+    .price {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin: 1rem 0;
+    }
+    
+    .discount {
+      text-decoration: line-through;
+      opacity: 0.7;
+    }
+    
+    .highlight {
+      background-color: rgba(248, 180, 0, 0.2);
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Исцеление временных линий</h1>
+    <p>Перепиши своё прошлое — измени своё будущее</p>
+    <a href="#form">Записаться на курс</a>
+  </header>
+
+  <section class="highlight">
+    <h2>Это для тебя, если...</h2>
+    <ul>
+      <li>Ты чувствуешь, что повторяешь одни и те же ошибки в жизни</li>
+      <li>У тебя есть эмоциональные травмы, которые не уходят</li>
+      <li>Ты хочешь понять своё предназначение</li>
+      <li>Ты готов/а к глубокой внутренней трансформации</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Что ты получишь на курсе</h2>
+    <ul>
+      <li>Методику Сэла Рэйчела — официально, от сертифицированного практика</li>
+      <li>8 недель глубокой проработки и поддержки</li>
+      <li>Навык работы с прошлыми жизнями и будущими временными линиями</li>
+      <li>Сертификат практика</li>
+      <li>Доступ к закрытому сообществу единомышленников</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Программа курса</h2>
+    <ol>
+      <li><strong>Неделя 1:</strong> Понимание временных линий и энергии кармы</li>
+      <li><strong>Неделя 2-3:</strong> Исцеление прошлого (личного и кармического)</li>
+      <li><strong>Неделя 4-5:</strong> Техника "Жемчужное ожерелье"</li>
+      <li><strong>Неделя 6-7:</strong> Работа с будущими линиями — выбор судьбы</li>
+      <li><strong>Неделя 8:</strong> Интеграция опыта и завершение</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>О тренере</h2>
+    <p>Я — [Имя], сертифицированный практик метода "Исцеления временных линий" Сэла Рэйчела с 5-летним опытом работы. Провожу духовные практики, индивидуальные сессии и обучаю тех, кто готов менять свою жизнь осознанно.</p>
+    <p>Моя миссия — помочь людям освободиться от ограничений прошлого и создать желаемое будущее через работу с временными линиями.</p>
+  </section>
+
+  <section>
+    <h2>Стоимость и формат</h2>
+    <p><strong>Формат:</strong> Онлайн-курс, 8 недель, живые вебинары + записи + чат поддержки</p>
+    
+    <div class="price">
+      <span class="discount">20 000 ₽</span> → 17 000 ₽
+    </div>
+    
+    <p><strong>Акция действует до:</strong> [дата]</p>
+    <p>Рассрочка доступна (2 платежа по 8 500 ₽). Мест всего: 20</p>
+  </section>
+
+  <section>
+    <h2>Бонусы</h2>
+    <ul>
+      <li>Аудиомедитация "Встреча с Высшим Я" (стоимость отдельно 2 500 ₽)</li>
+      <li>Поддержка в Telegram-группе на протяжении 3 месяцев после курса</li>
+      <li>Пакет раздаточных материалов (PDF, чеклисты, инструкции)</li>
+      <li>Дополнительный мастер-класс "Работа с параллельными реальностями"</li>
+    </ul>
+  </section>
+
+  <section id="form">
+    <h2>Зарегистрироваться</h2>
+    <form id="registration-form">
+      <label>Имя:<br><input type="text" name="name" required></label><br>
+      <label>Email:<br><input type="email" name="email" required></label><br>
+      <label>Телефон (для связи):<br><input type="tel" name="phone"></label><br>
+      <button type="submit">Записаться со скидкой</button>
+      <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem;">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© [Имя], сертифицированный практик метода ИВЛ. Этот курс не является медицинской услугой. Результаты индивидуальны.</p>
+    <p style="margin-top: 1rem; font-size: 0.9rem;">Контакты: example@email.com | +7 (XXX) XXX-XX-XX</p>
+  </footer>
+
+  <script>
+    document.getElementById('registration-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      
+      // Здесь можно добавить AJAX-запрос для отправки данных
+      alert('Спасибо за заявку! Мы свяжемся с вами в ближайшее время.');
+      this.reset();
+      
+      // Прокрутка к верху страницы после отправки
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  </script>
+</body>
+</html>
